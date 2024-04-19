@@ -92,8 +92,10 @@ section {
   min-height: 100vh;
   padding-top: 100px;
   background-color: rgb(12,23,38);
+  display: flex;
+  justify-content: center;
 }
-.white-line {
+.green-line {
   position: absolute;
   left: 50%; /* Center horizontally */
   top: 50px;
@@ -105,6 +107,12 @@ section {
   transition: background-color 0.3s ease;
 }
 
-.white-line:hover {
+.green-line:hover {
   background-color: #00ff00; /* Brighter white on hover */
+}
+
+.box {
+  width: 20px; /* Adjust width of the box */
+  height: 20px; /* Adjust height of the box */
+  background-color: blue; /* Color of the box */
 }

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(12, 16, 26);
+  margin-bottom: 10px; /* Add a margin-bottom value */
+  border-bottom: 1px solid white; /* Change the bottom border to white */
+}
+
+.logo-nav {
+  height: 45px;
+  width: 45px;
+}
+
+.portfolio {
+  padding-left: 10%;
+  font-size: 30px;
+}
+
+.nav-elements {
+  padding: 10px 40px 10px 20px;
+}
+
+.logo {
+  z-index: 2000;
+
+  height: 360px;
+  width: 295px;
+  transform: rotate(5deg);
+}
+
+.logo-and-words {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.others-elements {
+  display: flex;
+
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 10px;
+  font-size: 80px;
+}
+
+.letter-A {
+  color: green;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#section-introduction {
+  position: relative;
+  z-index: 200;
+  min-height: 100vh;
+  padding-top: 100px; /* Adjust as needed */
+}
+
+#section-projects {
+  position: relative;
+  z-index: 999  ;
+  min-height: 100vh;
+  padding-top: 100px;
+  background-color: rgb(12,23,38);
+}
+.white-line {
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  top: 50px;
+  bottom: 0;
+  width: 5px; /* Adjust thickness as needed */
+  background-color:  rgba(41, 224, 43, 0.45); ; /* Color of the line */
+  height: calc(100% - 40px); 
+  transform: translateX(-50%); /* Center horizontally */
+  transition: background-color 0.3s ease;
+}
+
+.white-line:hover {
+  background-color: #00ff00; /* Brighter white on hover */
+}

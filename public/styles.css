@@ -24,8 +24,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(12, 16, 26);
-  margin-bottom: 10px; /* Add a margin-bottom value */
-  border-bottom: 1px solid white; /* Change the bottom border to white */
+  margin-bottom: 10px; 
+  border-bottom: 1px solid white; 
 }
 
 .logo-nav {
@@ -83,7 +83,7 @@ section {
   position: relative;
   z-index: 200;
   min-height: 100vh;
-  padding-top: 100px; /* Adjust as needed */
+  padding-top: 100px; 
 }
 
 #section-projects {
@@ -97,22 +97,27 @@ section {
 }
 .green-line {
   position: absolute;
-  left: 50%; /* Center horizontally */
+  left: 50%; 
   top: 50px;
   bottom: 0;
-  width: 5px; /* Adjust thickness as needed */
-  background-color:  rgba(41, 224, 43, 0.45); ; /* Color of the line */
+  width: 5px;
+  background-color:  rgba(41, 224, 43, 0.45); ;
   height: calc(100% - 40px); 
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%); 
   transition: background-color 0.3s ease;
 }
 
 .green-line:hover {
-  background-color: #00ff00; /* Brighter white on hover */
+  background-color: #00ff00; 
 }
 
-.box {
-  width: 20px; /* Adjust width of the box */
-  height: 20px; /* Adjust height of the box */
-  background-color: blue; /* Color of the box */
+.box-right {
+  width: 400px; 
+  height: 200px; 
+  background-color: blue; 
+}
+.box-left {
+  width: 400px; 
+  height: 200px; 
+  background-color: blue; 
 }

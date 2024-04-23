@@ -15,7 +15,6 @@ body {
   flex-direction: column;
 }
 
-
 .nav {
   position: sticky;
   top: 0;
@@ -117,10 +116,19 @@ section {
   height: 160px; 
 }
 .box-left {
-  margin-right: 150px;
+  margin-right: 220px;
   width: 400px; 
   height: 160px; 
   background-color: blue; 
+}
+.intro-section.border-black {
+  border-color: black;
+}
+.box-right.border-black {
+  border-color: black;
+}
+.box-left.border-black {
+  border-color: black;
 }
 .intro-section{
   width: 400px; 

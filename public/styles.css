@@ -122,13 +122,13 @@ section {
   background-color: blue; 
 }
 .intro-section.border-black {
-  border-color: black;
+  border-color: rgb(12,23,38);
 }
 .box-right.border-black {
-  border-color: black;
+  border-color: rgb(12,23,38);
 }
 .box-left.border-black {
-  border-color: black;
+  border-color: rgb(12,23,38);
 }
 .intro-section{
   width: 400px; 

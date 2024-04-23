@@ -90,6 +90,7 @@ section {
   position: relative;
   z-index: 999  ;
   min-height: 100vh;
+  max-height: 130vh;
   padding-top: 100px;
   background-color: rgb(12,23,38);
   display: flex;
@@ -98,8 +99,8 @@ section {
 .green-line {
   position: absolute;
   left: 50%; 
-  top: 50px;
-  bottom: 0;
+  top: -0.2px;
+  bottom: 40px;
   width: 5px;
   background-color:  rgba(41, 224, 43, 0.45); ;
   height: calc(100% - 40px); 
@@ -113,11 +114,16 @@ section {
 
 .box-right {
   width: 400px; 
-  height: 200px; 
-  background-color: blue; 
+  height: 160px; 
 }
 .box-left {
+  margin-right: 150px;
   width: 400px; 
-  height: 200px; 
+  height: 160px; 
   background-color: blue; 
+}
+.intro-section{
+  width: 400px; 
+  height: 100px; 
+  background-color: red;
 }

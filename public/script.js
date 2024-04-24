@@ -2,6 +2,7 @@ let iterations = 0;
 let sentences = [];
 
 document.addEventListener('DOMContentLoaded', function() {
+
   const lettersElements = document.getElementsByClassName("letters");
   const intervalIDs = [];
   for (let i = 0; i < lettersElements.length - 1; i++) {

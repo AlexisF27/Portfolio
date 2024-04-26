@@ -75,10 +75,6 @@ body {
   color: green;
 }
 
-button{
-  padding: 10px 20px;
-}
-
 button:hover{
   background-color: rgba(53, 169, 55, 0.45);
   box-shadow: 0 0 5px rgba(41, 224, 43, 0.45), 0 0 25px rgba(120, 255, 123, 0.45), 0 0 50px rgba(81, 240, 84, 0.45), 0 0 200px rgba(70, 248, 73, 0.45);
@@ -88,7 +84,7 @@ button:hover{
 #section-introduction {
   position: relative;
   z-index: 200;
-  min-height: 100vh;
+  min-height: 91vh;
   padding-top: 100px; 
 }
 
@@ -151,95 +147,3 @@ button:hover{
   background-color: red;
 }
 
-section {
-  min-height: 89vh;
-  /* height: 100vh; */
-  /* scroll-snap-align: center; */
-  flex: none;
-}
-
-
-
-
-
-
-
-
-/*
-
-*/
-
-
-.holster {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-flow: column nowrap;
-  font-family: monospace;
-}
-.container {
-  display: flex;
-  margin: 1em auto;
-  outline: 1px dashed lightgray;
-  flex: none;
-  overflow: auto;
-}
-.container.x {
-  width: 100%;
-  height: 128px;
-  flex-flow: row nowrap;
-  overflow-y: hidden;
-}
-.container.y {
-  width: 400px;
-  height: 256px;
-  flex-flow: column nowrap;
-  overflow-x: hidden;
-}
-
-/* scroll-snap */
-.x.mandatory-scroll-snapping {
-  scroll-snap-type: x mandatory;
-}
-.x.proximity-scroll-snapping {
-  scroll-snap-type: x proximity;
-}
-.y.mandatory-scroll-snapping {
-  scroll-snap-type: y mandatory;
-}
-.y.proximity-scroll-snapping {
-  scroll-snap-type: y proximity;
-}
-
-.container > div {
-  text-align: center;
-  scroll-snap-align: center;
-  flex: none;
-}
-
-.x.container > div {
-  line-height: 128px;
-  font-size: 64px;
-  width: 100%;
-  height: 128px;
-}
-.y.container > div {
-  line-height: 256px;
-  font-size: 128px;
-  width: 256px;
-  height: 100%;
-}
-
-/* appearance fixes */
-.y.container > div:first-child {
-  line-height: 1.3;
-  font-size: 64px;
-}
-
-/* coloration */
-.container > div:nth-child(even) {
-  background-color: #87ea87;
-}
-.container > div:nth-child(odd) {
-  background-color: #87ccea;
-}

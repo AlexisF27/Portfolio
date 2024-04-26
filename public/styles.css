@@ -13,6 +13,7 @@
 body {
   display: flex;
   flex-direction: column;
+
 }
 
 .nav {
@@ -42,19 +43,18 @@ body {
 }
 
 .logo {
-  z-index: 2000;
-
+  z-index: 1;
   height: 360px;
   width: 295px;
   transform: rotate(5deg);
 }
 
 .logo-and-words {
-
+  padding-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .others-elements {
@@ -74,9 +74,6 @@ body {
   color: green;
 }
 
-section {
-  min-height: 100vh;
-}
 
 #section-introduction {
   position: relative;
@@ -87,9 +84,7 @@ section {
 
 #section-projects {
   position: relative;
-  z-index: 999  ;
-  min-height: 80vh;
-  height: 91vh;
+  z-index: 200;
   padding-top: 25px;
   background-color: rgb(12,23,38);
   display: flex;
@@ -98,10 +93,8 @@ section {
 
 #section-github{
   position: relative;
-  z-index: 999  ;
-  min-height: 80vh;
-  height: 91vh;
-  padding-top: 50 px;
+  z-index: 200;
+  padding-top: 50px;
   background-color: rgb(12,23,38);
   display: flex;
   justify-content: center;
@@ -147,13 +140,10 @@ section {
   background-color: red;
 }
 
-.y.mandatory-scroll-snapping {
-  scroll-snap-type: y mandatory;
-  overflow-y: auto; /* Ensure vertical scrolling */
-  height: 100vh; /* Set the height of the section to viewport height */
+section {
+  min-height: 100vh;
+
 }
 
-.section > div {
-  scroll-snap-align: center;
-  flex: none;
-}
+
+

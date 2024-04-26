@@ -39,7 +39,7 @@ body {
 }
 
 .nav-elements {
-  padding: 10px 40px 10px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .logo {
@@ -59,6 +59,7 @@ body {
 
 .others-elements {
   display: flex;
+  margin-right: 20px;  
 
 }
 
@@ -72,6 +73,15 @@ body {
 
 .letter-A {
   color: green;
+}
+
+button{
+  padding: 10px 20px;
+}
+
+button:hover{
+  background-color: rgba(53, 169, 55, 0.45);
+  box-shadow: 0 0 5px rgba(41, 224, 43, 0.45), 0 0 25px rgba(120, 255, 123, 0.45), 0 0 50px rgba(81, 240, 84, 0.45), 0 0 200px rgba(70, 248, 73, 0.45);
 }
 
 

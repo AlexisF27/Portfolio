@@ -1,0 +1,51 @@
+
+#section-projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+
+
+.green-line {
+  position: absolute;
+  left: 50%; 
+  width: 5px;
+  background-color:  rgba(41, 224, 43, 0.45); ;
+  height: 100%;
+  transform: translateX(-50%); 
+  transition: background-color 0.3s ease;
+}
+
+.green-line:hover {
+  background-color: #00ff00; 
+}
+
+.intro-section{
+  width: 400px; 
+  height: 100px; 
+  background-color: red;
+}
+
+
+
+.box-right {
+  width: 400px; 
+  height: 160px; 
+}
+.box-left {
+  margin-right: 220px;
+  width: 400px; 
+  height: 160px; 
+  background-color: blue; 
+}
+.intro-section.border-black {
+  border-color: rgb(12,23,38);
+}
+.box-right.border-black {
+  border-color: rgb(12,23,38);
+}
+.box-left.border-black {
+  border-color: rgb(12,23,38);
+}

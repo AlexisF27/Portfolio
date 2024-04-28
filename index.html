@@ -14,7 +14,11 @@
   >
   <link
     rel="stylesheet"
-    href="public/styles.css"
+    href="public/styles_nav.css"
+  >
+  <link
+    rel="stylesheet"
+    href="public/styles_index.css"
   >
   <link
     rel="stylesheet"
@@ -28,20 +32,27 @@
 
 <body>
 
-  <nav class="nav">
+  <nav class="nav sticky top-0">
+
     <div class="first-element nav-elements">
-      <img
-        class="logo-nav"
-        src="/public/img/logo-no-words.svg"
-        alt="img-no-words"
-      >
+      <a href="./">
+        <button class="p-2.5">
+          <img
+            class="logo-nav"
+            src="/public/img/logo-no-words.svg"
+            alt="img-no-words"
+          >
+        </button>
+      </a>
     </div>
     <div class="letters portfolio">PORTFOLIO</div>
     <div class="others-elements mr-8">
       <a href="./projects.html">
         <button class="letters nav-elements px-4 ml-4">Projects</button>
       </a>
-      <button class="letters nav-elements px-4">GitHub</button>
+      <a href="./github_page.html">
+        <button class="letters nav-elements px-4">GitHub</button>
+      </a>
     </div>
   </nav>
 
@@ -111,14 +122,6 @@
       <div class="star"></div>
     </div>
   </section>
-
-
-
-
-  <section id="section-github">
-    <div>iojfew</div>
-  </section> 
-
 
 </body>
 

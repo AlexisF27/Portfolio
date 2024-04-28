@@ -10,33 +10,46 @@
   <title>Document</title>
   <link
     rel="stylesheet"
-    href="public/styles.css"
+    href="public/styles_nav.css"
+  >
+  
+  <link
+    rel="stylesheet"
+    href="public/styles_projects.css"
   >
   <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-  <nav>
-    <div class="first-element nav-elements flex ">
-      <img
-        class="logo-nav"
-        src="/public/img/logo-no-words.svg"
-        alt="img-no-words"
-      >
+  <nav class="nav sticky top-0">
+    <div class="first-element nav-elements">
+      <a href="./">
+        <button class="p-2.5">
+          <img
+            class="logo-nav"
+            src="/public/img/logo-no-words.svg"
+            alt="img-no-words"
+          >
+        </button>
+      </a>
     </div>
     <div class="letters portfolio">PORTFOLIO</div>
     <div class="others-elements mr-8">
       <a href="./projects.html">
-        <button class="letters nav-elements px-4 ml-4">Projects</button>
+        <button class="letters nav-elements px-4 ">Projects</button>
       </a>
-      <button class="letters nav-elements px-4">GitHub</button>
+      <a href="./github_page.html">
+
+        <button class="letters nav-elements px-4">GitHub</button>
+      </a>
+
     </div>
   </nav>
 
   <section id="section-projects">
     <div class="green-line"></div>
-    <div class="flex flex-col mt-28">
+    <div class="flex flex-col mt-4">
       <div
         class="flex"
         style="height: 320px;"

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  z-index: 201;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(12, 16, 26);
+  border-bottom: 1px solid white; 
+}
+
+button:hover{
+  background-color: rgba(53, 169, 55, 0.45);
+  box-shadow: 0 0 5px rgba(41, 224, 43, 0.45), 0 0 25px rgba(120, 255, 123, 0.45), 0 0 50px rgba(81, 240, 84, 0.45), 0 0 200px rgba(70, 248, 73, 0.45);
+}
+
+.logo-nav {
+  height: 45px;
+  width: 45px;
+}
+
+.portfolio {
+  padding-left: 10%;
+  font-size: 30px;
+}
+
+.nav-elements {
+  padding: 10px 20px 10px 20px;
+}
+
+#section-github{
+  position: relative;
+  z-index: 200;
+  padding-top: 50px;
+  background-color: rgb(12,23,38);
+  display: flex;
+  justify-content: center;
+}

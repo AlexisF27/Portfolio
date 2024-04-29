@@ -1,6 +1,7 @@
 
 
 #section-github{
+  height: 89vh;
   position: relative;
   padding-top: 1px;
   background-color: rgb(12,23,38);
@@ -10,13 +11,14 @@
 
 
 .github-logo{
+  display: flex;
+  align-items: flex-end;
   z-index: 10;
-  padding-top: 13.2%;
+  bottom: 0px;
   position: relative;
 
 }
 .circle {
-  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%; /* This makes the div circular */
@@ -43,4 +45,18 @@
   100%{
       transform: scale(1.5);
   }
+}
+
+.html{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.box-languages{
+  
+}
+
+.programming-languages{
+  visibility: hidden;
 }

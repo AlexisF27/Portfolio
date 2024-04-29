@@ -1,12 +1,18 @@
-#section-github {
+
+
+#section-github{
   position: relative;
+  padding-top: 1px;
+  background-color: rgb(12,23,38);
+  display: flex;
+  justify-content: center;
 }
+
 
 .github-logo{
   z-index: 10;
-  padding-top: 20%;
+  padding-top: 13.2%;
   position: relative;
-  z-index: 400;
 
 }
 .circle {

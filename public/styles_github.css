@@ -87,7 +87,18 @@
   top: 190px;
   right: 1000px;
 }
-
+.php{
+  z-index: 100;
+  position: absolute;
+  top: 290px;
+  left: 400px;
+}
+.node-js{
+  z-index: 100;
+  position: absolute;
+  top: 490px;
+  left: 400px;
+}
 
 
 

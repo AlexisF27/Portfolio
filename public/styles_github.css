@@ -75,6 +75,20 @@
   top: 190px;
   right: 200px;
 }
+.java{
+  z-index: 100;
+  position: absolute;
+  top: 60px;
+  right: 850px;
+}
+.c-plus{
+  z-index: 100;
+  position: absolute;
+  top: 190px;
+  right: 1000px;
+}
+
+
 
 
 

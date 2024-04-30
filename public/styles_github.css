@@ -70,6 +70,12 @@
   top: 390px;
   right: 200px;
 }
+.react{
+  position: absolute;
+  top: 190px;
+  right: 200px;
+}
+
 
 
 .language-box:hover .circle{

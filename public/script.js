@@ -5,6 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const lettersElements = document.getElementsByClassName("letters");
   const intervalIDs = [];
+
+  const languageBoxes = document.querySelectorAll('.language-box');
+  const githubSection = document.getElementById('section-github');
+
+  languageBoxes.forEach(box => {
+    box.addEventListener('mouseover', function() {
+      githubSection.classList.add('blur');
+    });
+
+    box.addEventListener('mouseout', function() {
+      githubSection.classList.remove('blur');
+    });
+  });
+
+
   for (let i = 0; i < lettersElements.length - 1; i++) {
     const originalSentence = lettersElements[i].innerText;
     sentences.push({ original: originalSentence, modified: ' ' });

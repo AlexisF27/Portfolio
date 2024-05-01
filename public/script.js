@@ -1,24 +1,11 @@
 let iterations = 0;
 let sentences = [];
+let languageBoxes = [];
 
 document.addEventListener('DOMContentLoaded', function() {
 
   const lettersElements = document.getElementsByClassName("letters");
   const intervalIDs = [];
-
-  const languageBoxes = document.querySelectorAll('.language-box');
-  const githubSection = document.getElementById('section-github');
-
-  languageBoxes.forEach(box => {
-    box.addEventListener('mouseover', function() {
-      githubSection.classList.add('blur');
-    });
-
-    box.addEventListener('mouseout', function() {
-      githubSection.classList.remove('blur');
-    });
-  });
-
 
   for (let i = 0; i < lettersElements.length - 1; i++) {
     const originalSentence = lettersElements[i].innerText;
@@ -28,6 +15,37 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   setTimeout(startAnimation, 50);
+
+  var languageBoxes = document.querySelectorAll('.language-box');
+  languageBoxes.forEach(function (element) {
+    element.classList.add('animate__animated');
+    element.classList.add('animate__heartBeat');
+  });
+
+  languageBoxes.forEach(function (element) {
+    element.addEventListener('mouseover', function () {
+      element.classList.remove('animate__heartBeat');
+      element.firstElementChild.classList.add('animate__animated');
+      element.children[1].classList.add('letters');
+      element.firstElementChild.classList.add('animate__flip');
+
+      languageBoxes.forEach(function (box) {
+        if (box !== element) {
+          box.classList.add('blur');
+        }
+      });
+    });
+
+    // Add event listener for mouseout
+    element.addEventListener('mouseout', function () {
+      // Remove the class when the mouse moves out of the element
+      languageBoxes.forEach(function (box) {
+        box.classList.remove('blur');
+        box.children[1].classList.remove('letters'); 
+        box.firstElementChild.classList.remove('animate__flip');
+      });
+    });
+  });
   
 });
 

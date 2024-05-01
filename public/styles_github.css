@@ -61,8 +61,8 @@
 }
 .css{
   position: absolute;
-  top: 500px;
-  left: 100px;
+  top: 490px;
+  left: 180px;
 }
 
 .vue{
@@ -110,6 +110,24 @@
   position: absolute;
   top: 80px;
   right: 450px;
+}
+.mongodb{
+  z-index: 100;
+  position: absolute;
+  top: 80px;
+  left: 450px
+}
+.sql{
+  z-index: 100;
+  position: absolute;
+  top: 40px;
+  right: 100px
+}
+.laravel{
+  z-index: 100;
+  position: absolute;
+  top: 600px;
+  left: 313px
 }
 
 

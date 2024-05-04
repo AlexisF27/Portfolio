@@ -27,11 +27,14 @@
   font-size: 80px;
 }
 
-
-
-#section-introduction {
+#section-introduction{
+  z-index: 200;
+  min-height: 90vh;
+  padding-top: 100px; 
+}
+#section-introduction-second{
   position: relative;
   z-index: 200;
-  min-height: 91vh;
-  padding-top: 100px; 
+  min-height: 90vh;
+  padding-top: 00px; 
 }

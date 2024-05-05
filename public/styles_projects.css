@@ -25,6 +25,14 @@
   width: 400px; 
   height: 100px; 
   background-color: red;
+  
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  background-color: white;
 }
 
 

@@ -27,6 +27,16 @@
   font-size: 80px;
 }
 
+.second-introduction{
+  height: 50rem;
+}
+
+.presentation{
+  width: 60rem;
+}
+.presentation-img{
+  width: 60rem;
+}
 #section-introduction{
   z-index: 200;
   min-height: 90vh;
@@ -36,5 +46,4 @@
   position: relative;
   z-index: 200;
   min-height: 90vh;
-  padding-top: 00px; 
 }

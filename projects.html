@@ -12,12 +12,14 @@
     rel="stylesheet"
     href="public/styles_nav.css"
   >
-  
+
   <link
     rel="stylesheet"
     href="public/styles_projects.css"
   >
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="public/script.js"></script>
+
 
 </head>
 
@@ -40,46 +42,72 @@
         <button class="letters nav-elements px-4 ">Projects</button>
       </a>
       <a href="./github_page.html">
-
         <button class="letters nav-elements px-4">GitHub</button>
       </a>
 
     </div>
   </nav>
 
+  <div class="green-line"></div>
   <section id="section-projects">
-    <div class="green-line"></div>
-    <div class="flex flex-col mt-4">
-      <div
-        class="flex"
-        style="height: 320px;"
-      >
+    <div style="width: 1200px;">
+      <div class="flex flex-col mt-4">
         <div
-          class="flex flex-col"
-          style="height: 260px;"
-        >
-          <div class="box-left border-2 border-current border-black"></div>
-          <div class="intro-section border-2 border-current border-black border-black"></div>
-        </div>
-        <div
-          class="flex flex-col"
+          class="flex justify-between"
           style="height: 320px;"
         >
-          <div class="box-right bg-purple-300 mt-12 border-2 border-current border-black"></div>
-          <div class="intro-section border-2 border-current border-black"></div>
+
+          <div class="languages-circles-project flex items-center">
+            <div class="mr-8 ml-4">
+              few
+            </div>
+            <div class="flex flex-col language-box">
+              <div class="box-left border-2 border-current border-black"></div>
+              <div class="intro-section border-current border-black border-black"></div>
+            </div>
+          </div>
+
+          <div class="languages-circles-project flex items-center">
+            <div
+              class="flex flex-col language-box"
+              style="height: 320px;"
+            >
+              <div class="box-right bg-purple-300 mt-12 border-2 border-current border-black"></div>
+              <div class="intro-section border-2 border-current border-black"></div>
+            </div>
+            <div class="mr-8 ml-4">
+              few
+            </div>
+          </div>
         </div>
+
+        <div class="flex mt-8 justify-between">
+          <div class="languages-circles-project flex items-center">
+            <div class="mr-8 ml-4">
+              few
+            </div>
+            <div class="flex flex-col language-box">
+
+              <div class="box-left border-2 border-current border-black"></div>
+              <div class="intro-section border-2 border-current border-black border-black"></div>
+            </div>
+          </div>
+
+          <div class="languages-circles-project flex items-center">
+            <div class="flex flex-col language-box ">
+              <div class="box-right bg-purple-300 mt-12 border-2 border-current border-black"></div>
+              <div class="intro-section border-2 border-current border-black"></div>
+            </div>
+            <div class="mr-8 ml-4">
+              few
+            </div>
+          </div>
+
+
+        </div>
+
       </div>
 
-      <div class="flex mt-8">
-        <div class="flex flex-col">
-          <div class="box-left border-2 border-current border-black"></div>
-          <div class="intro-section border-2 border-current border-black border-black"></div>
-        </div>
-        <div class="flex flex-col">
-          <div class="box-right bg-purple-300 mt-12 border-2 border-current border-black"></div>
-          <div class="intro-section border-2 border-current border-black"></div>
-        </div>
-      </div>
     </div>
   </section>
 

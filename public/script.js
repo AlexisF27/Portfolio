@@ -2,21 +2,52 @@ let iterations = 0;
 let sentences = [];
 let languageBoxes = [];
 
-document.addEventListener('DOMContentLoaded', function() {
-
-  const lettersElements = document.getElementsByClassName("letters");
+document.addEventListener('DOMContentLoaded', function () {
+  const lettersElements = document.getElementsByClassName('letters');
   const intervalIDs = [];
 
   for (let i = 0; i < lettersElements.length - 1; i++) {
     const originalSentence = lettersElements[i].innerText;
     sentences.push({ original: originalSentence, modified: ' ' });
     const intervalID = setInterval(() => modifySentence(i, intervalIDs), 80);
-    intervalIDs.push(intervalID); 
+    intervalIDs.push(intervalID);
   }
 
   setTimeout(startAnimation, 50);
 
+  var languageCircleProjecs = document.querySelectorAll(
+    '.languages-circles-project'
+  );
+
+  languageCircleProjecs.forEach(function (element) {
+    var contaitor_languages = element.querySelector('.contaitor-languages');
+    var circle_language = document.querySelectorAll(
+      '.circle-language'
+    );
+
+    element.addEventListener('mouseover', function () {
+      contaitor_languages.classList.remove('invisible');
+
+      circle_language.forEach(function(circle){
+        circle.classList.add('animate__animated');
+        circle.classList.add('animate__slideInRight');
+      });
+    });
+
+    element.addEventListener('mouseout', function () {
+      contaitor_languages.classList.add('invisible');
+
+      circle_language.forEach(function(circle){
+        circle.classList.remove('animate__animated');
+        circle.classList.remove('animate__slideInRight');
+      });
+
+    });
+  });
+
+  //Circle github page
   var languageBoxes = document.querySelectorAll('.language-box');
+
   languageBoxes.forEach(function (element) {
     element.classList.add('animate__animated');
     element.classList.add('animate__heartBeat');
@@ -26,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     element.addEventListener('mouseover', function () {
       element.classList.remove('animate__heartBeat');
       element.firstElementChild.classList.add('animate__animated');
-      element.children[1].classList.add('letters');
       element.firstElementChild.classList.add('animate__flip');
 
       languageBoxes.forEach(function (box) {
@@ -36,33 +66,28 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-    // Add event listener for mouseout
     element.addEventListener('mouseout', function () {
-      // Remove the class when the mouse moves out of the element
       languageBoxes.forEach(function (box) {
         box.classList.remove('blur');
-        box.children[1].classList.remove('letters'); 
+        box.children[1].classList.remove('letters');
         box.firstElementChild.classList.remove('animate__flip');
       });
     });
   });
-  
 });
-
 
 function startAnimation() {
   const stars = document.querySelectorAll('.star');
-  stars.forEach(function(star, index) {
-    star.style.animationDelay = `-${index * 0.50}s`; // Delay each star's animation based on its index
+  stars.forEach(function (star, index) {
+    star.style.animationDelay = `-${index * 0.5}s`; // Delay each star's animation based on its index
   });
 }
-
 
 function modifySentence(index, intervalIDs) {
   if (iterations < 30) {
     const originalSentence = sentences[index].original;
     let modifiedSentence = '';
-    for (let i = 0; i < originalSentence.length -1; i++) {
+    for (let i = 0; i < originalSentence.length - 1; i++) {
       if (originalSentence[i] === ' ') {
         modifiedSentence += ' ';
       } else {
@@ -83,7 +108,7 @@ function getRandomLetter() {
 }
 
 function updateElementText(index, newText) {
-  const lettersElements = document.getElementsByClassName("letters");
+  const lettersElements = document.getElementsByClassName('letters');
   if (lettersElements[index]) {
     lettersElements[index].innerText = newText;
   } else {

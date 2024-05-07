@@ -35,16 +35,16 @@
 }
 
 
-.language-box:hover > .intro-section.border-black {
+.languages-circles-project:hover > .intro-section.border-black {
   border-color: rgb(197, 208, 224);
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
 
 }
-.language-box:hover > .box-left.border-black{
+.languages-circles-project:hover > .box-left.border-black{
   border-color: rgb(197, 208, 224);
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
 }
-.language-box:hover > .box-right.border-black {
+.languages-circles-project:hover > .box-right.border-black {
   border-color: rgb(197, 208, 224);
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
 }

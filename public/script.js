@@ -30,16 +30,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
       circle_language.forEach(function(circle){
         circle.classList.add('animate__animated');
-        circle.classList.add('animate__slideInRight');
+        circle.classList.add('animate__fadeInDownBig');
+        circle.style.setProperty('--animate-duration', '0.6s')
       });
+
+
     });
+
+
 
     element.addEventListener('mouseout', function () {
       contaitor_languages.classList.add('invisible');
 
       circle_language.forEach(function(circle){
         circle.classList.remove('animate__animated');
-        circle.classList.remove('animate__slideInRight');
+        circle.classList.remove('animate__fadeInDownBig');
       });
 
     });

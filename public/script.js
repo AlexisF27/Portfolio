@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log(lettersElements);
   const intervalIDs = [];
 
-  for (let i = 0; i < lettersElements.length ; i++) {
+  for (let i = 0; i < lettersElements.length  ; i++) {
     const originalSentence = lettersElements[i].innerText;
     sentences.push({ original: originalSentence, modified: ' ' });
     const intervalID = setInterval(() => modifySentence(i, intervalIDs), 80);

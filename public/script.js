@@ -4,9 +4,10 @@ let languageBoxes = [];
 
 document.addEventListener('DOMContentLoaded', function () {
   const lettersElements = document.getElementsByClassName('letters');
+  console.log(lettersElements);
   const intervalIDs = [];
 
-  for (let i = 0; i < lettersElements.length - 1; i++) {
+  for (let i = 0; i < lettersElements.length ; i++) {
     const originalSentence = lettersElements[i].innerText;
     sentences.push({ original: originalSentence, modified: ' ' });
     const intervalID = setInterval(() => modifySentence(i, intervalIDs), 80);

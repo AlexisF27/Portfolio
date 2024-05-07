@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setTimeout(startAnimation, 50);
 
+
+  //section project
   var languageCircleProjecs = document.querySelectorAll(
     '.languages-circles-project'
   );
+  console.log(languageCircleProjecs); 
 
   languageCircleProjecs.forEach(function (element) {
     var contaitor_languages = element.querySelector('.contaitor-languages');
@@ -27,6 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     element.addEventListener('mouseover', function () {
       contaitor_languages.classList.remove('invisible');
+
+      languageCircleProjecs.forEach(function (box) {
+        if (box !== element) {
+          box.classList.add('blur');
+        }
+      });
 
       circle_language.forEach(function(circle){
         circle.classList.add('animate__animated');
@@ -41,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     element.addEventListener('mouseout', function () {
       contaitor_languages.classList.add('invisible');
+
+      languageCircleProjecs.forEach(function (box) {
+        box.classList.remove('blur');
+        box.firstElementChild.classList.remove('animate__flip');
+      });
 
       circle_language.forEach(function(circle){
         circle.classList.remove('animate__animated');
@@ -74,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
     element.addEventListener('mouseout', function () {
       languageBoxes.forEach(function (box) {
         box.classList.remove('blur');
-        box.children[1].classList.remove('letters');
         box.firstElementChild.classList.remove('animate__flip');
       });
     });

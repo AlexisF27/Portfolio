@@ -35,24 +35,20 @@
 }
 
 
-.languages-circles-project:hover > .intro-section.border-black {
-  border-color: rgb(197, 208, 224);
+.languages-circles-project:hover > .square-project:hover > .border-black {
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
 
 }
-.languages-circles-project:hover > .box-left.border-black{
-  border-color: rgb(197, 208, 224);
+.languages-circles-project:hover > .square-project:hover > .border-black {
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
 }
-.languages-circles-project:hover > .box-right.border-black {
-  border-color: rgb(197, 208, 224);
+.languages-circles-project:hover >  .square-project:hover > .border-black {
+  border-color: white !important;
+
   box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
 }
 
 
-.language-box:hover + .green-line{
-  background-color: #00ff00; 
-}
 
 
 .box-right {
@@ -62,14 +58,8 @@
 .box-left {
   width: 400px; 
   height: 160px; 
-  background-color: blue; 
 }
-.intro-section.border-black {
-  border-color: rgb(12,23,38);
+.border-black {
+  border-color: rgb(12,21,33) !important;
 }
-.box-right.border-black {
-  border-color: rgb(12,23,38);
-}
-.box-left.border-black {
-  border-color: rgb(12,23,38);
-}
+ 

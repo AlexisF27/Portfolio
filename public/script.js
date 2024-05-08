@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
       circle_language.forEach(function(circle){
         circle.classList.add('animate__animated');
         circle.classList.add('animate__fadeInDownBig');
-        circle.style.setProperty('--animate-duration', '0.6s')
+        circle.style.setProperty('--animate-duration', '0.4s')
       });
 
 

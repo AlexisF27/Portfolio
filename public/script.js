@@ -4,7 +4,6 @@ let languageBoxes = [];
 
 document.addEventListener('DOMContentLoaded', function () {
   const lettersElements = document.getElementsByClassName('letters');
-  console.log(lettersElements);
   const intervalIDs = [];
 
   for (let i = 0; i < lettersElements.length  ; i++) {
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var languageCircleProjecs = document.querySelectorAll(
     '.languages-circles-project'
   );
-  console.log(languageCircleProjecs); 
 
   languageCircleProjecs.forEach(function (element) {
     var contaitor_languages = element.querySelector('.contaitor-languages');
@@ -31,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     element.addEventListener('mouseover', function () {
       contaitor_languages.classList.remove('invisible');
+
 
       languageCircleProjecs.forEach(function (box) {
         if (box !== element) {
@@ -46,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     });
-
-
 
     element.addEventListener('mouseout', function () {
       contaitor_languages.classList.add('invisible');

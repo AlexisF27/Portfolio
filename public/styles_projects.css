@@ -11,14 +11,14 @@
   position: absolute;
   left: 50%; 
   width: 5px;
-  background-color:  rgba(41, 224, 43, 0.45);
+  background-color:  rgba(188, 202, 188, 0.45);
   height: 100%;
   transform: translateX(-50%); 
   transition: background-color 0.3s ease;
 }
 
 .green-line:hover {
-  background-color: #00ff00; 
+  background-color: #ffffff; 
 }
 
 .intro-section{

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   languageCircleProjecs.forEach(function (element) {
     var contaitor_languages = element.querySelector('.contaitor-languages');
     
-      var contaitor_information = element.querySelector('.contaitor-information');
+    var contaitor_information = element.querySelector('.contaitor-information');
     var background = element.querySelector('.background');
     var circle_language = document.querySelectorAll('.circle-language');
     

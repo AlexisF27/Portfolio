@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       contaitor_languages.classList.remove('invisible');
       if(contaitor_information != null){
-        contaitor_information.classList.remove('invisible');
+        contaitor_information.classList.add('invisible');
       }
       if(background != null){
-        background.classList.add('bg-none');
+        background.classList.remove('bg-none');
       }
 
 
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       contaitor_languages.classList.add('invisible');
       if(contaitor_information != null){
-        contaitor_information.classList.add('invisible');
+        contaitor_information.classList.remove('invisible');
       }
       if(background != null){
-        background.classList.remove('bg-none');
+        background.classList.add('bg-none');
       }
 
       

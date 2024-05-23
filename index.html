@@ -1,143 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PORTFOLIO</title>
+		<link rel="shortcut icon" type="image/ico" href="/public/img/github-avatar.ico" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <title>PORTFOLIO</title>
-  <link rel="shortcut icon" type="image/ico" href="/public/img/github-avatar.ico"/>
+		<link rel="stylesheet" href="/public/star-fall.css" />
+		<link rel="stylesheet" href="public/styles_nav.css" />
+		<link rel="stylesheet" href="public/styles_index.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<script src="public/script.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
 
-  <link
-    rel="stylesheet"
-    href="/public/star-fall.css"
-  >
-  <link
-    rel="stylesheet"
-    href="public/styles_nav.css"
-  >
-  <link
-    rel="stylesheet"
-    href="public/styles_index.css"
-  >
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  >
-  <script src="public/script.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+	<body>
+		<nav class="nav sticky top-0">
+			<div class="first-element nav-elements">
+				<a href="./">
+					<button class="p-2.5">
+						<img class="logo-nav" src="/public/img/logo-no-words.svg" alt="img-no-words" />
+					</button>
+				</a>
+			</div>
+			<div class="letters portfolio">PORTFOLIO</div>
+			<div class="flex mr-8">
+				<a href="./projects.html">
+					<button class="letters nav-elements px-4 ml-4">Projects</button>
+				</a>
+				<a href="./github_page.html">
+					<button class="letters nav-elements px-4">GitHub</button>
+				</a>
+			</div>
+		</nav>
 
-</head>
-
-<body>
-
-  <nav class="nav sticky top-0">
-
-    <div class="first-element nav-elements">
-      <a href="./">
-        <button class="p-2.5">
+    <main class="pb-32">
+      <section class="container mx-auto min-h-screen flex justify-center items-center">
+        <div class="flex items-center gap-3">
           <img
-            class="logo-nav"
-            src="/public/img/logo-no-words.svg"
+            class="logo animate__animated animate__zoomInRight"
+            src="/public/img/logo-dedos-no-background.png"
             alt="img-no-words"
-          >
-        </button>
-      </a>
-    </div>
-    <div class="letters portfolio">PORTFOLIO</div>
-    <div class="others-elements mr-8">
-      <a href="./projects.html">
-        <button class="letters nav-elements px-4 ml-4">Projects</button>
-      </a>
-      <a href="./github_page.html">
-        <button class="letters nav-elements px-4">GitHub</button>
-      </a>
-    </div>
-  </nav>
-
-
-  <section id="section-introduction">
-    <div class="logo-and-words">
-      <img
-        class="logo animate__animated animate__zoomInRight"
-        src="/public/img/logo-dedos-no-background.png"
-        alt="img-no-words"
-      >
-      <div class="introduction">
-        <div class="letters">Hola!</div>
-        <div class="letters">I'm Alexis</div>
-      </div>
-    </div>
-    <div class="stars">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-    </div>
-  </section>
-
-  <section id="section-introduction-second">
-    <div class=" flex text-center justify-center items-center flex-col second-introduction">
-      <h6 class="presentation mb-32 text-2xl ">
-        I'm a enthusiastic web developer with a passion for creating engaging and responsive websites. Although I am relatively new to the industry, I have a strong foundation in both frontend and backend development, and I'm always eager to learn and take on new challenges. My goal is to build functional, user-friendly web applications that provide excellent user experiences.
-      </h6>
-      <div class="presentation-img flex justify-between">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=alexisf27&theme=tokyonight&show_icons=true&locale=en&layout=compact&count_weight=1&size_weight" alt="">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=alexisf27&theme=tokyonight&exclude_days=Sat,Sun" alt="">
-      
-      </div>
-    </div>
-  </section>
-
-</body>
-
+          />
+          <div class="text-end text-7xl">
+            <div class="letters">Hola!</div>
+            <div class="letters">I'm Alexis</div>
+          </div>
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+      </section>
+  
+      <section class="container mx-auto">
+        <div class="flex text-center justify-center items-center flex-col">
+          <h6 class="presentation mb-32 text-2xl">
+            I'm a enthusiastic web developer with a passion for creating engaging and responsive websites.
+            Although I am relatively new to the industry, I have a strong foundation in both frontend and
+            backend development, and I'm always eager to learn and take on new challenges. My goal is to build
+            functional, user-friendly web applications that provide excellent user experiences.
+          </h6>
+          <div class="flex md:flex-row flex-col gap justify-center gap-4">
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=alexisf27&theme=tokyonight&show_icons=true&locale=en&layout=compact&count_weight=1&size_weight"
+              alt=""
+            />
+            <img
+              src="https://github-readme-streak-stats.herokuapp.com/?user=alexisf27&theme=tokyonight&exclude_days=Sat,Sun"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+	</body>
 </html>
-

@@ -1,21 +1,4 @@
 
-#section-projects {
-  display: flex;
-  justify-content: center;
-  height: 120vh;
-}
-
-.green-line {
-  z-index: 50;
-  position: absolute;
-  left: 50%; 
-  width: 5px;
-  background-color:  rgba(188, 202, 188, 0.45);
-  height: 130%;
-  transform: translateX(-50%); 
-  transition: background-color 0.3s ease;
-}
-
 .green-line:hover {
   background-color: #ffffff; 
 }
